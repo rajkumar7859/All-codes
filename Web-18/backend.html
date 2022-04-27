@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend</title>
+
+<style>
+    #nav{
+   
+        height: 20%;
+        border: 1px solid red;
+        display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    }
+    #nav>div{
+    
+    
+        font-size: 40px;
+    }
+   
+    
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+           <div><a href="backend.html">Backend</a></div>
+            <div><a href="frontend.html">Frontend</a></div>
+    
+        </div>
+    
+        <body>
+            <h1>Backend</h1>
+            <form id="form">
+          
+        <input type="text" placeholder="Enter image url" id="imgUrl" >
+        <input type="text" placeholder="Enter your name"  id="name">
+        <input type="text" placeholder="Enter your role" id="role">
+        <input type="text" placeholder="Enter logo url" id="logo">
+        <input type="submit" id="submit" value="submit">
+
+            </form>
+        </body>
+        </html>
+        
+        <script>
+       document.querySelector("form").addEventListener("submit",investerfun)
+
+       var investerArr=[]
+
+       function investerfun(){
+           event.preventDefault();
+
+           var investerObj={
+          Image:form.imgUrl.value,
+          Name:form.name.value,
+          Role:form.role.value,
+          Logo:form.logo.value,
+
+           };
+           investerArr.push(investerObj);
+           localStorage.setItem("investerData",JSON.stringify(investerArr))
+        }
+        </script>

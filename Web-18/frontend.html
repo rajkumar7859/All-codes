@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>frontend</h1>
+
+    <div id="maind">
+
+    </div>
+    <link rel="stylesheet" href="frontend.css">
+</body>
+</html>
+<script>
+  
+var investerArr=JSON.parse(localStorage.getItem("investerData"));
+
+
+investerArr.forEach(function (elem) {
+    
+    var box =document.createElement("div")
+
+    var inversterImage=document.createElement("img")
+    inversterImage.setAttribute("src",elem.Image)
+
+    var inversterName=document.createElement("h2")
+    inversterName.innerText=elem.Name;
+
+    var inversterRole=document.createElement("p")
+    inversterRole.innerText=elem.Role;
+
+    var inversterLogo=document.createElement("img")
+    inversterLogo.setAttribute("src",elem.Logo) 
+
+    console.log(inversterImage,inversterName,inversterRole,inversterLogo);
+
+    box.append(inversterImage,inversterName,inversterRole,inversterLogo)
+    document.querySelector("#maind").append(box)
+});
+
+</script>

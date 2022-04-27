@@ -1,0 +1,26 @@
+
+    #maind{
+        
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 20px;
+        
+    }
+    #maind>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+  p+img{
+      height: 50px;
+margin-left: 30%;
+  }
+  h2,p{
+
+      text-align: center;
+  }
+  img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
