@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's page</title>
+<link rel="stylesheet" href="mens_womens.css">
+
+<style>
+    #navbar{
+        height: 50px;
+        width: 100%;
+        margin-top: -8px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: pink;
+        position: fixed;
+
+    }
+h2{
+    margin: auto;
+}
+</style>
+
+</head>
+<body>
+    <div id="navbar">
+
+        <h2><a href="navbar22.html">Meena Bazzer</a></h2>
+        <h2> <a href="womens.html">Women's</a></h2>
+        <h2> <a href="men's.html">Men's</a> </h2>
+            </div>
+ <div id="border">
+
+ </div>
+</body>
+</html>
+
+<script>
+var men_product=[
+{
+product_Image:"https://m.media-amazon.com/images/I/51++cxHDe6L._AC_UL320_.jpg",
+product_Name:"Gauri Laxmi Enterprise",
+product_Price:"284",
+product_Offer:"500",
+},
+{
+product_Image:"https://m.media-amazon.com/images/I/61p94YWp2pL._AC_UL320_.jpg",
+product_Name:"Morden kurta",
+product_Price:"284",
+product_Offer:"500",
+},
+{
+product_Image:"https://m.media-amazon.com/images/I/71su+D5DjWL._AC_UL320_.jpg",
+product_Name:"Printed kurta",
+product_Price:"284",
+product_Offer:"500",
+},
+{
+product_Image:"https://m.media-amazon.com/images/I/61qcRPTaTaL._AC_UL320_.jpg",
+product_Name:"Fastive kurta",
+product_Price:"284",
+product_Offer:"500",
+},
+
+];
+
+ men_product.forEach(function (ele){
+
+    var box=document.createElement("div");
+
+    var product_img=document.createElement("img");
+    product_img.setAttribute("src",ele.product_Image)
+
+    var product_name=document.createElement("h2")
+    product_name.innerText=ele.product_Name;
+
+    var product_prc=document.createElement("p")
+    product_prc.innerText=ele.product_Price;
+
+    var product_Off=document.createElement("p")
+    product_Off.innerText=ele.product_Offer;
+
+    var add=document.createElement("button")
+    add.innerText="Add to card"
+
+    box.append(product_img,product_name,product_prc,product_Off,add)
+    document.querySelector("#border").append(box)
+
+
+
+});
+
+
+
+</script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens page</title>
+
+    <link rel="stylesheet" href="mens_womens.css">
+    <style>
+        #navbar{
+            height: 50px;
+            width: 100%;
+            margin-top: -51px;
+        border-radius: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            position: fixed;
+    
+        }
+    h2{
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+
+        <h2><a href="navbar22.html">Meena Bazzer</a></h2>
+        <h2> <a href="womens.html">Women's</a></h2>
+        <h2> <a href="men's.html">Men's</a> </h2>
+            </div>
+
+    <div id="product">
+    </div>
+</body>
+</html>
+<script>
+
+var womens_product =[
+    {
+        productImage:"https://images.meesho.com/images/products/3163744/1_512.jpg",
+        productName:"Tail Kurti ",
+        productPrice:"299",
+        productOff:"500",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/1987898/1_512.jpg",
+        productName:"A-Line Kurti",
+        productPrice:"250",
+        productOff:"450",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/4695667/1_512.jpg",
+        productName:"Flared Kurti",
+        productPrice:"599",
+        productOff:"700",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/3884410/1_512.jpg",
+        productName:"Kaftan Kurti",
+        productPrice:"450",
+        productOff:"600",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/295269/1_512.jpg",
+        productName:"Cape Kurti",
+        productPrice:"250",
+        productOff:"500",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/22745565/0bf8d_512.jpg",
+        productName:"Asymmetrical Kurti ",
+        productPrice:"499",
+        productOff:"600",
+
+    },
+    {
+        productImage:"https://images.meesho.com/images/products/87140619/bwbnr_512.jpg",
+        productName:"Anarkali Kurti",
+        productPrice:"799",
+        productOff:"1000",
+
+    },
+    {
+        productImage:"https://m.media-amazon.com/images/I/61fvW2UXeRS._AC_UL320_.jpg",
+        productName:"Long Straight Kurti",
+        productPrice:"599",
+        productOff:"700",
+
+    },
+];
+
+womens_product.forEach(function (ele){
+
+var box=document.createElement("div")
+
+var pro_image=document.createElement("img")
+pro_image.setAttribute("src",ele.productImage)
+
+var pro_name=document.createElement("h2")
+pro_name.innerText=ele.productName;
+
+var pro_price=document.createElement("p")
+pro_price.innerText=ele.productPrice;
+
+var pro_off=document.createElement("p")
+pro_off.innerText=ele.productOff
+
+var btn=document.createElement("button")
+btn.innerText="Add to cart"
+
+// console.log( pro_image,pro_name,pro_price,pro_off );
+
+box.append( pro_image,pro_name,pro_price,pro_off ,btn );
+document.querySelector("#product").append(box)
+
+})
+
+</script>
