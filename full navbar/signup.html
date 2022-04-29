@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+
+    <link rel="stylesheet" href="signLog.css">
+</head>
+<body>
+    <form id="inform" >
+       
+            <h1>Sign up here</h1>
+
+<input type="text" placeholder="Enter your first name" id="firstName">
+<input type="text" placeholder="Enter your last name" id="lastName">
+<input type="email" placeholder="Enter your email" id="email">
+<input type="password" placeholder="Make a password" id="password">
+<input type="submit" value="Submit">
+
+</form>
+  
+</body>
+</html>
+<script>
+
+var form=document.querySelector("inform");
+
+inform.addEventListener("submit",function(event){
+event.preventDefault();
+
+var data={
+
+    
+    userFrstName:inform.firstName.value,
+    userLastName:inform.lastName.value,
+    userEmail:inform.email.value,
+    userPassword:inform.password.value,
+}
+
+// console.log(data);
+localStorage.setItem("setData",JSON.stringify(data));
+
+window.location.href="login.html"
+});
+
+
+
+
+</script>
