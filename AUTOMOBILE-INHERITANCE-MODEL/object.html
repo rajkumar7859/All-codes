@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMOBILE INHERITANCE MODEL</title>
+</head>
+<body>
+    <h1>AUTOMOBILE INHERITANCE MODEL</h1>
+</body>
+</html>
+
+<script>
+    let automobile={
+        model:"BMW Z4",
+        company:"Bayerische Motoren Werke GmbH",
+        color:"Matte black",
+        price:"80.00000",
+    };
+    let car=Object.create(automobile)
+    car.color="Matte black"
+    console.log(car);
+</script>
