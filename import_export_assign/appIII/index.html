@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+         #navbar{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: rgb(0, 255, 242);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        #options{
+            display: flex;
+            gap: 25px;
+        }
+        #options a,a{
+            text-decoration: none;
+            color: black;
+        }
+      #container{
+/* border: 1px solid red; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(auto);
+gap: 15px;
+padding: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      }  
+#heading{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+
+    <h1 id="heading">Users Data</h1>
+    <div id="container">
+    </div>
+</body>
+</html>
+<script type="module">
+
+import navbar from "/script/index.js";
+document.getElementById("navbar").innerHTML=navbar;
+
+
+// ------------------------------>storing data<--------------------
+
+let arr=JSON.parse(localStorage.getItem("information")) || []
+    console.log(arr)
+    function append(){
+        let cont= document.getElementById("container")
+        arr.forEach(function (el) {
+                 let div= document.createElement("div")
+
+                 let name=document.createElement("h3")
+                 name.innerText=`Name:  ${el.userName}`;
+
+                 let email=document.createElement("h3")
+                 email.innerText=`E-Mail:  ${el.userEmail}`;
+
+                 let number=document.createElement("h3")
+                 number.innerText=` Address:  ${el.userAddress}`;
+
+                 div.append(name,email,number)
+                 cont.append(div)
+        });
+
+    }
+append()
+</script>

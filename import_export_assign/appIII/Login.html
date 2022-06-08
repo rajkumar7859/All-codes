@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+         #navbar{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: rgb(0, 255, 242);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        #options{
+            display: flex;
+            gap: 25px;
+        }
+        #options a,a{
+            text-decoration: none;
+            color: black;
+        }
+        #userData{
+            /* border: 1px solid red; */
+            padding: 10px;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-radius: 10px;
+        }
+        #userData input{
+            display: block;
+            width: 95%;
+            margin: auto;
+            border: none;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+    <div id="userData" >
+    <form id="form">
+<h1>Login page</h1>
+<input id="userEmail" type="email" placeholder="Enter your email ">
+<input id="pass" type="password" placeholder="reenter your password ">
+<input id="button" type="submit" onclick="login()" >
+</form>
+</div>
+    
+  
+</body>
+</html>
+<script type="module">
+
+import navbar from "/script/index.js";
+document.getElementById("navbar").innerHTML=navbar;
+
+// ------------------------>data storing part <---------------------------------
+
+</script>
+<script src="script\Login.js"></script>
