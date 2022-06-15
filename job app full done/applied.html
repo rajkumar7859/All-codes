@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database</title>
+    <link rel="stylesheet" href="commonStyles.css" />
+
+    <style>
+      tbody>tr>td:nth-last-child(1){
+        background-color: red;
+        font-weight: bolder;
+        cursor: pointer;
+
+      }
+      #sortName{
+         margin-left: 10px;
+         color: white;
+         background-color: blue;
+         cursor: pointer;
+      }
+    
+      #sortName:hover{
+        background-color: green;
+      }
+      tbody>tr>td:nth-last-child(1):hover{
+       color: white;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="links">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="applied.html">Applied Jobs</a></div>
+      <div><a href="bookmark.html">Bookmarks</a></div>
+    </div>
+    <select  id="sortName" onChange="sortnames()">
+      <option value="">Sort By Name</option>
+      <option value="Ascending">Ascending</option>
+      <option value="Descending">Descending</option>
+    </select>
+
+    <select id="filterRole" onChange="rolefilter()">
+      <option value="">Filter By Job</option>
+      <option value="FSD">FSD</option>
+      <option value="Backend">Backend</option>
+      <option value="Frontend">Forntend</option>
+    </select>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job applied</th>
+            <th>Salary expected</th>
+            <th>Add to bookmark</th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
+<script src="scriptFile\applied.js"></script>

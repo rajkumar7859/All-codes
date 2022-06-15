@@ -30,30 +30,6 @@
       <input id="submit" type="submit" name="submit" value="Submit" />
     </form>
   </body>
-  <script>
-    //you need to code here
-document.querySelector("#form").addEventListener("submit",jobSubmit)
-
-
-var jobArr=[]
-
-    function jobSubmit(){
-      event.preventDefault();
-
-      var jobObj={
-       personName:form.name.value,
-       personEmail:form.email.value,
-       personRole:form.role.value,
-       personSalary:form.salary.value,
-      };
-      jobArr.push(jobObj);
-      // console.log(jobArr)
-
-localStorage.setItem("jobList",JSON.stringify(jobArr));
-
-window.location.href="applied.html";
-
-    }
-
-  </script>
 </html>
+
+<script src="scriptFile\index.js"></script>
