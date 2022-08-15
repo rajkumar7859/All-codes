@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+h1{
+font-style: italic;
+width: max-content;
+
+}
+.maindDiv{
+    width: 90%;
+    height: 540px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-top: 20px;
+    /* border: 1px solid ; */
+}
+.orangeDiv{
+background-color: #FF9933;
+    /* border: 1px solid ; */
+    height: 33%;
+}
+.whiteDiv{
+    background-color:  #FFFFFF;
+    /* border: 1px solid; */
+}
+.greenDiv{
+background-color: #138808;
+/* border: 1px solid; */
+height: 33%;
+}
+.ashok_chakra{
+    /* width: 14.8%; */
+    width: 178px;
+    height: 33%;
+    border:2px solid blue;
+    border-radius: 50%;
+    margin: auto;
+    }
+   
+    .ashok_chakra li{
+    list-style: none;
+    width: 99%;
+    border: 1px solid blue;
+    position: relative;
+    }
+   
+    li:nth-child(1){
+    top: 88px;
+    }
+
+    li:nth-child(2){
+    top: 86px;
+    transform: rotate(90deg);
+    }
+    li:nth-child(3){
+    top: 84px;
+    transform: rotate(15deg);
+    }
+    li:nth-child(4){
+    top: 82px;
+    transform: rotate(30deg);
+    }
+    li:nth-child(5){
+    top: 80px;
+    transform: rotate(45deg);
+    }
+    li:nth-child(6){
+    top: 78px;
+    transform: rotate(60deg);
+    }
+    li:nth-child(7){
+    top: 76px;
+    transform: rotate(75deg);
+    }
+    li:nth-child(8){
+    top: 74px;
+    transform: rotate(105deg);
+    }
+    li:nth-child(9){
+    top: 72px;
+    transform: rotate(120deg);
+    }
+    li:nth-child(10){
+    top: 70px;
+    transform: rotate(135deg);
+    }
+    li:nth-child(11){
+    top: 68px;
+    transform: rotate(150deg);
+    }
+    li:nth-child(12){
+    top: 66px;
+    transform: rotate(165deg);
+    }
