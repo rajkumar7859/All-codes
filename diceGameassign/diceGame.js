@@ -97,7 +97,7 @@ function game(){
      x.style.background="yellow"
     }
     else{
-        result.innerHTML="😏DRAW!"
+        result.innerHTML="😁DRAW!"
      z.style.background="blue"
      y.style.background="blue"
      x.style.background="blue"
