@@ -29,7 +29,6 @@ function VideoPlayer() {
   };
   useEffect(() => {
     VideoRef.current.src = `${addedLink}`;
-    // console.log(VideoRef.current.src);
   }, [addedLink]);
   return (
     <div>
