@@ -25,6 +25,7 @@ function VideoPlayer() {
 
   const handleAdded = () => {
     setAddedlink(link);
+    setLink("")
     // console.log(addedLink);
   };
   useEffect(() => {
@@ -52,6 +53,7 @@ function VideoPlayer() {
           // "https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/28028/guf8bBRwEwJsL01geZELebV0BmSX3jqkKNPVpLNV.mp4"
         /> */}
           </video>
+          <br/>
           <button onClick={handlePlay}>Play</button>
           <button onClick={handlePause}>Pause</button>
           <button onClick={handleSkip}>Skip 10 Sec</button>
