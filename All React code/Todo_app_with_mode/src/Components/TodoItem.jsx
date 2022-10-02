@@ -22,5 +22,4 @@ function TodoItem({ title, status, handleDelete, handelstatus }) {
     </div>
   );
 }
-
 export default TodoItem;
