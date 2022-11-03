@@ -1,0 +1,10 @@
+.image{
+    height: 570px;
+    /* border: 1px solid; */
+    background-image: linear-gradient(to right, rgb(47, 50, 241) , rgb(113, 122, 248));
+}
+.logo{
+    height: 130px;
+    max-width: 100%;
+    margin-top: 33%;
+}
