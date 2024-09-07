@@ -1,0 +1,66 @@
+#container{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    margin-top: 10px;
+}
+#container div{
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-bottom: 5px;
+      margin: auto;
+}
+#container div img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    /* height: 400px; */
+}
+#container>div>h2{
+    color: orangered; 
+}
+#container>div>p{
+   font-size: 18px;
+   font-weight: 550;
+   margin-bottom: 10px;
+}
+#mainDiv{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-image: url(https://us.123rf.com/450wm/vadmary/vadmary1704/vadmary170400039/76733664-popcorn-cinema-reel-disposable-cup-clapper-board-and-tickets-at-blue-background-concept-cinema-theat.jpg?ver=6);
+  padding: 10px;
+}
+#btn{
+  font-size: 18px;
+  font-weight: 550;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 5px 20px ;
+}
+#btn:hover{
+  cursor: pointer;
+  color: black;
+  background-color: rgb(255, 115, 0);
+}
+#mainDiv input{
+padding: 7px;
+border: none;
+border-radius: 5px;
+width: 40%;
+background-color: rgb(250, 189, 207);
+}
+#mainDiv h1{
+ font-size: 40px;
+ margin-bottom: -30px;
+}
+#mainDiv h3{
+ font-size: 30px;
+}
