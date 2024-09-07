@@ -1,8 +1,9 @@
-const api = "AIzaSyAzxPhVF3OJEc10SuGwxz8nofa4tBYoPe0";
+// const api = "";
 
 let populerVideo = async ()=>{
   try {
-    let url1=`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&maxResults=28&key=${api}`;
+    let url1=`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&maxResults=28&key=AIzaSyAzxPhVF3OJEc10SuGwxz8nofa4tBYoPe0`;
+    // let url1=`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&maxResults=28&key=${api}`;
 
     let response= await fetch(url1)
 
