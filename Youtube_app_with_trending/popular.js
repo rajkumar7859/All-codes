@@ -27,9 +27,8 @@ ans.forEach(({id} ) => {
   let iframe = document.createElement("iframe");
   iframe.src = `https://www.youtube.com/embed/${id}`;
   iframe.allow="fullscreen"; 
-
-
-  div.append(iframe)
+  
+  div.append(iframe )
   container.append(div)
 
 });
