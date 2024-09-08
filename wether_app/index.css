@@ -1,0 +1,74 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+    #cont{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto);
+        
+    }
+    #cont div{
+box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+background-color: white;
+border-radius: 10px;
+padding: 7px;
+height: 240px;
+margin: 15px;
+    }
+    #cont div img{
+        width:55%;
+        margin-bottom: -95px;
+
+    }
+    #cont div h3{
+        font-size: 30px;
+     margin-left: 90px;
+     color: orangered;
+    }
+#mainDiv{
+ margin-top: 20px;
+ background-image: url(https://climateatlas.ca/sites/default/files/styles/pageheader/public/2018-03/Basics.jpg?itok=LsCbfTWk);
+ display: flex;
+ padding: 10px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mainDiv .gmap_canvas{
+width: 65%;
+height: 330px;
+margin-left:30%;
+background-color: white;
+padding: 7px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input{
+ width: 30%;
+ border-radius:10px ;
+ padding: 10px;
+ border: none;
+ background-color: antiquewhite;
+}
+#btn{
+font-size: 18px;
+font-weight: 550;
+border: none;
+border-radius: 10px;
+background-color: rgb(255, 0, 0);
+color: white;
+padding: 5px 20px ;
+}
+#btn:hover{
+cursor: pointer;
+color: black;
+background-color: rgb(255, 115, 0);
+}
