@@ -1,0 +1,21 @@
+# Virtual McDonald's App
+
+## Deployment
+You can view the live app at [Virtual McDonald's App](https://effervescent-malabi-7c9e36.netlify.app/).
+
+## Description
+**Virtual McDonald's App** is an interactive website where customers can simulate ordering burgers by selecting options via checkboxes. The app provides a simple and user-friendly interface to choose from various burger options. This is a fun demo app to showcase a virtual fast-food ordering experience.
+
+## Features
+- Customers can order burgers by selecting options via checkboxes.
+- Simple and intuitive UI for a smooth user experience.
+- Real-time selection of burger items.
+
+## Tech Stack
+- **HTML**: Provides the structure of the webpage.
+- **CSS**: Styles the website for a clean and modern look.
+
+## How to Use
+1. Open the app in your web browser.
+2. Select the desired burger items by clicking on the checkboxes.
+3. Once you are done selecting your burger options, the app will simulate the order process.
